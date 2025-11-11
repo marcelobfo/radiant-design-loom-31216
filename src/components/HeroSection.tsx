@@ -1,10 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { Download, BookOpen, Award } from "lucide-react";
 import ebookMockup from "@/assets/ebook-mockup.png";
+import UserMenu from "./UserMenu";
 
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center gradient-hero overflow-hidden">
+      {/* User Menu - Fixed Top Right */}
+      <div className="absolute top-4 right-4 z-20">
+        <UserMenu />
+      </div>
+
       {/* Decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary-light/20 rounded-full blur-3xl"></div>
