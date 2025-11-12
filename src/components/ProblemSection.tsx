@@ -4,29 +4,29 @@ import { Card } from "@/components/ui/card";
 const problems = [
   {
     icon: AlertCircle,
-    title: "Você está entre das sistemas de 2025?",
-    description: "Como planejar a transição sem surpresas no regime misto e novo calendário?",
+    title: "Convivência entre dois sistemas até 2033?",
+    description: "Como planejar a transição sem surpresas no regime misto e novo calendário tributário?",
     color: "text-red-500",
     bgColor: "bg-red-50"
   },
   {
     icon: FileQuestion,
-    title: "Dúvidas constantes, pacificação e certeza fiscal",
-    description: "Não sabe o modelo correto preparativo para se moutificar (IVA e mais mudanças)?",
+    title: "Ajustar contratos, precificação e sistema fiscal?",
+    description: "Como adaptar processos e modelos de negócio ao novo IVA e demais mudanças estruturais?",
     color: "text-orange-500",
     bgColor: "bg-orange-50"
   },
   {
     icon: CreditCard,
-    title: "Aumentar os créditos do novo modelo?",
-    description: "Quer saber como identificar oportunidade de todos disponíveis na Nova legislação?",
+    title: "Aproveitar os créditos do novo modelo?",
+    description: "Quer saber como identificar e maximizar todas as oportunidades de créditos disponíveis na nova legislação?",
     color: "text-amber-500",
     bgColor: "bg-amber-50"
   },
   {
     icon: TrendingDown,
-    title: "Manter conformidade sem pagar mais impostos?",
-    description: "Como garantir que você está no caminho certo sem elevação da carga tributária empresarial?",
+    title: "Manter conformidade sem pagar mais imposto do que precisa?",
+    description: "Como garantir que você está no caminho certo sem elevação desnecessária da carga tributária empresarial?",
     color: "text-blue-500",
     bgColor: "bg-blue-50"
   }
@@ -42,7 +42,7 @@ const ProblemSection = () => {
             <span className="text-gradient">mas a maioria das empresas ainda não sabe o que fazer</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Você está preparado para as decisões que já começam? A transição começou e quem não se adaptar ficará para trás.
+            Você está preparado para:
           </p>
         </div>
         

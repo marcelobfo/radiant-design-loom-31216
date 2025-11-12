@@ -5,28 +5,28 @@ const audiences = [
   {
     icon: Briefcase,
     title: "Empresários e Gestores",
-    description: "Profissionais de empresas que precisam se adequar rapidamente ao novo regime tributário.",
+    description: "Empresários e gestores de pequenas e médias empresas que precisam se adequar rapidamente ao novo regime tributário.",
     color: "text-blue-500",
     bgColor: "bg-blue-50"
   },
   {
     icon: Calculator,
     title: "Contadores e Consultores",
-    description: "Profissionais tributários que orientam empresas na conformidade e otimização fiscal de 2025.",
+    description: "Contadores e consultores tributários que orientam empresas na conformidade e otimização fiscal pós-reforma.",
     color: "text-green-500",
     bgColor: "bg-green-50"
   },
   {
     icon: Users,
     title: "Profissionais de Finanças",
-    description: "Especialistas em controladoria e compliance que precisam de estratégias para a transição do novo modelo.",
+    description: "Profissionais de finanças, controladoria e compliance que precisam de estratégias práticas para a transição tributária.",
     color: "text-purple-500",
     bgColor: "bg-purple-50"
   },
   {
     icon: GraduationCap,
     title: "Autônomos",
-    description: "Profissionais liberais que precisam tributários por pensam atualizar sobre as novas regras.",
+    description: "Autônomos que prestam serviços tributáveis e precisam se atualizar sobre as novas regras e obrigações fiscais.",
     color: "text-amber-500",
     bgColor: "bg-amber-50"
   }

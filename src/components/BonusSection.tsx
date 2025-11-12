@@ -4,49 +4,49 @@ import { Badge } from "@/components/ui/badge";
 
 const bonuses = [
   {
-    icon: FileText,
+    icon: BookOpen,
     number: 1,
-    title: "Guia e Reforma Tributária Mapa e Seis Fases",
-    description: "Guia das 6 fases comentadas com exemplos prático em cada etapa da adequação.",
-    color: "text-green-500",
-    bgColor: "bg-green-500/10",
-    isNew: true
-  },
-  {
-    icon: Calculator,
-    number: 2,
-    title: "Planilha Guia de Prática para o Cálculo Comparativo IVA",
-    description: "Calcule e compare projeções práticas e IVA com modelos prontos passo a passo.",
+    title: "Como a Reforma Tributária Afeta o Seu Negócio",
+    description: "Análise detalhada do impacto por setor econômico para você entender exatamente como sua área será impactada.",
     color: "text-blue-500",
     bgColor: "bg-blue-500/10",
     isNew: true
   },
   {
-    icon: Video,
+    icon: FileText,
+    number: 2,
+    title: "O que Muda na Prática para o Contribuinte",
+    description: "Guia específico para PMEs e MEIs com orientações diretas e práticas para adequação imediata.",
+    color: "text-green-500",
+    bgColor: "bg-green-500/10",
+    isNew: true
+  },
+  {
+    icon: ListChecks,
     number: 3,
-    title: "Aula com 100 Perguntas Essenciais",
-    description: "Todas suas 100 dúvidas nas questões desafio bônus feitas por especialistas.",
+    title: "FAQ com 195 Respostas Essenciais",
+    description: "As perguntas mais frequentes sobre a reforma tributária respondidas de forma clara e objetiva.",
     color: "text-purple-500",
     bgColor: "bg-purple-500/10",
     isNew: true
   },
   {
-    icon: ListChecks,
+    icon: Calculator,
     number: 4,
-    title: "Lista de 10 Tempo da Reforma",
-    description: "Os PTC e fundamentais da completo-estratégias atualizados de todos fila da atualização",
+    title: "Linha do Tempo da Reforma",
+    description: "Cronologia completa da PEC à implementação, para você acompanhar cada fase da transição.",
     color: "text-amber-500",
     bgColor: "bg-amber-500/10",
-    isNew: false
+    isNew: true
   },
   {
-    icon: BookOpen,
+    icon: Video,
     number: 5,
-    title: "Relatório Tributária Completa",
-    description: "Guia Básico e estratégico com análise compatível de todos pra atualizada.",
+    title: "Reforma Tributária Completa",
+    description: "Guia técnico e estratégico com análise aprofundada para profissionais que precisam de máximo detalhamento.",
     color: "text-red-500",
     bgColor: "bg-red-500/10",
-    isNew: false
+    isNew: true
   }
 ];
 
@@ -63,15 +63,14 @@ const BonusSection = () => {
         <div className="text-center mb-12 space-y-4 animate-fade-in">
           <Badge className="bg-accent text-accent-foreground border-none text-sm px-4 py-2">
             <Gift className="w-4 h-4 mr-2 inline" />
-            Bônus Exclusivos na Oferta
+            📦 Bônus Exclusivos
           </Badge>
           
           <h2 className="text-4xl md:text-5xl font-bold">
-            Receba 5 Bônus Gratuitos
+            Bônus Exclusivos na Oferta
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Valor total dos bônus: <span className="text-accent font-bold">R$ 197</span> —{" "}
-            você recebe gratuitamente ao adquirir o e-book principal
+            💡 Valor dos bônus: <span className="text-accent font-bold">R$ 197</span> — você recebe gratuitamente ao adquirir o e-book principal
           </p>
         </div>
         

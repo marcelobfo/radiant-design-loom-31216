@@ -4,13 +4,11 @@ import { Badge } from "@/components/ui/badge";
 import businessPlanning from "@/assets/business-planning.jpg";
 
 const benefits = [
-  "Passo a passo para implementar seu planejamento tributário eficiente",
-  "Modelos e planilhas prontas e aprovadas por especialistas",
-  "Simulações e cenários práticos para a nova tributação brasileira",
-  "Guia completo do novo IVA e seus impactos no dia a dia",
-  "Dicas de até 6 profissionais da nova tributária",
-  "Revisão para tomada certameira consultoria e fiscal",
-  "Acesso exclusivo ao Grupo VIP de discussões"
+  "Passo a passo para redesenhar seu planejamento tributário",
+  "Estratégias de aproveitamento de créditos",
+  "Simulações e cenários práticos para tomadas de decisão",
+  "Diagnóstico da sua empresa no contexto da nova tributação",
+  "Roteiro para revisão contratual, societária e fiscal"
 ];
 
 const BenefitsSection = () => {
@@ -46,7 +44,7 @@ const BenefitsSection = () => {
             </h2>
             
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Um guia formatado de conteúdo, concreto e fácil para reforma tributária brasileira com segurança e eficácia.
+              Um guia prático, completo e estratégico para navegar a reforma tributária brasileira com segurança e eficácia.
             </p>
             
             <div className="space-y-4 pt-4">

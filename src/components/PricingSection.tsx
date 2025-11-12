@@ -4,17 +4,20 @@ import { Badge } from "@/components/ui/badge";
 import { CheckCircle2, Download, Clock, Shield } from "lucide-react";
 
 const features = [
-  "E-book completo (+ de 150 páginas)",
-  "Atualizações gratuitas durante 1 ano",
-  "Download imediato",
-  "5 bônus exclusivos (valor R$ 197)",
-  "Certificado de conclusão",
-  "Garantia de 7 dias",
+  "E-book completo + 5 bônus exclusivos",
+  "Download imediato após a compra",
+  "Garantia incondicional de 7 dias",
   "Acesso vitalício ao conteúdo",
-  "Suporte via e-mail"
+  "Atualizações gratuitas incluídas"
 ];
 
 const PricingSection = () => {
+  // 🔗 CONFIGURAÇÃO: Adicione aqui o link do botão de checkout/compra
+  const handleCheckoutClick = () => {
+    // Substitua 'SEU_LINK_DE_CHECKOUT_AQUI' pelo link real da página de pagamento
+    window.location.href = 'SEU_LINK_DE_CHECKOUT_AQUI';
+  };
+
   return (
     <section className="py-20 gradient-hero relative overflow-hidden">
       {/* Decorative elements */}
@@ -27,8 +30,11 @@ const PricingSection = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12 space-y-4 animate-fade-in text-white">
             <h2 className="text-4xl md:text-5xl font-bold">
-              Garanta agora seu acesso ao guia mais direto e estratégico sobre o novo sistema tributário
+              ✅ Garanta agora seu acesso ao guia mais direto e estratégico sobre o novo sistema tributário
             </h2>
+            <p className="text-xl text-white/80 max-w-2xl mx-auto">
+              👉 Valor simbólico comparado ao risco de não se preparar para a maior mudança tributária em décadas
+            </p>
           </div>
           
           <Card className="p-8 md:p-12 shadow-2xl border-4 border-accent/30 bg-white/95 backdrop-blur-sm animate-scale-in">
@@ -66,13 +72,14 @@ const PricingSection = () => {
             <Button 
               size="lg" 
               className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-bold text-xl py-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+              onClick={handleCheckoutClick}
             >
               <Download className="mr-2 h-6 w-6" />
-              Clique no botão abaixo e comece hoje mesmo
+              📥 Clique aqui e comece hoje mesmo
             </Button>
             
             <p className="text-center text-sm text-muted-foreground mt-6">
-              🔒 A compra é feita em uma ambiente em pix para cartão de crédito
+              🔒 Compra segura — aceita pix e cartão de crédito
             </p>
             
             <div className="grid md:grid-cols-3 gap-4 mt-8 pt-8 border-t">
