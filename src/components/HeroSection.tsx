@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Download, BookOpen, Award } from "lucide-react";
+import { Download, Award } from "lucide-react";
 // ⚙️ CONFIGURAÇÃO: Substitua o caminho abaixo pelo link da sua imagem do ebook
 import ebookMockup from "@/assets/ebook-mockup.png";
 
@@ -10,10 +10,6 @@ const HeroSection = () => {
     window.location.href = 'SEU_LINK_DE_COMPRA_AQUI';
   };
 
-  const handleDemoClick = () => {
-    // Substitua 'SEU_LINK_DEMO_AQUI' pelo link real da demonstração
-    window.location.href = 'SEU_LINK_DEMO_AQUI';
-  };
 
   return (
     <section className="relative min-h-screen flex items-center gradient-hero overflow-hidden">
@@ -42,15 +38,10 @@ const HeroSection = () => {
               Descubra como otimizar lucros, reduzir riscos e sair na frente ainda em 2025 com o guia definitivo da nova realidade tributária brasileira.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+            <div className="pt-4">
               <Button size="lg" variant="default" className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105" onClick={handleDownloadClick}>
                 <Download className="mr-2 h-5 w-5" />
                 Baixar E-book Agora
-              </Button>
-              
-              <Button size="lg" variant="outline" className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20 font-semibold text-lg px-8 py-6 transition-all duration-300" onClick={handleDemoClick}>
-                <BookOpen className="mr-2 h-5 w-5" />
-                Ver Demonstração
               </Button>
             </div>
             
