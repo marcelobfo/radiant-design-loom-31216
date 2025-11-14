@@ -5,7 +5,10 @@ import ebookMockup from "@/assets/ebook-mockup.png";
 
 const HeroSection = () => {
   const handleDownloadClick = () => {
-    window.location.href = 'https://pay.hotmart.com/N102539391O';
+    const pricingSection = document.getElementById('pricing-section');
+    if (pricingSection) {
+      pricingSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   };
 
 
