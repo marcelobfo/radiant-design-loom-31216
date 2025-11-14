@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle2, Download, Clock, Shield } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 
 const features = [
   "E-book completo + 5 bônus exclusivos",
@@ -12,12 +13,35 @@ const features = [
 ];
 
 const PricingSection = () => {
+  const [isHighlighted, setIsHighlighted] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsHighlighted(true);
+            setTimeout(() => setIsHighlighted(false), 2000);
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
   const handleCheckoutClick = () => {
     window.location.href = 'https://pay.hotmart.com/N102539391O';
   };
 
   return (
-    <section id="pricing-section" className="py-20 gradient-hero relative overflow-hidden">
+    <section ref={sectionRef} id="pricing-section" className="py-20 gradient-hero relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-accent/20 rounded-full blur-3xl"></div>
@@ -35,7 +59,7 @@ const PricingSection = () => {
             </p>
           </div>
           
-          <Card className="p-8 md:p-12 shadow-2xl border-4 border-accent/30 bg-white/95 backdrop-blur-sm animate-scale-in">
+          <Card className={`p-8 md:p-12 shadow-2xl border-4 bg-white/95 backdrop-blur-sm animate-scale-in transition-all duration-500 ${isHighlighted ? 'border-accent scale-105 shadow-accent/50 shadow-2xl ring-4 ring-accent/30' : 'border-accent/30'}`}>
             <div className="text-center mb-8">
               <Badge className="bg-accent text-accent-foreground border-none text-sm px-4 py-2 mb-4">
                 🔥 Oferta por Tempo Limitado
