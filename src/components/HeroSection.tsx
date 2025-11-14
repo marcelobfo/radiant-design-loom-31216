@@ -4,10 +4,8 @@ import { Download, Award } from "lucide-react";
 import ebookMockup from "@/assets/ebook-mockup.png";
 
 const HeroSection = () => {
-  // 🔗 CONFIGURAÇÃO: Adicione aqui os links dos botões de ação
   const handleDownloadClick = () => {
-    // Substitua 'SEU_LINK_DE_COMPRA_AQUI' pelo link real de checkout/compra
-    window.location.href = 'SEU_LINK_DE_COMPRA_AQUI';
+    window.location.href = 'https://pay.hotmart.com/N102539391O';
   };
 
 
