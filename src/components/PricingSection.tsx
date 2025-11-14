@@ -12,10 +12,8 @@ const features = [
 ];
 
 const PricingSection = () => {
-  // 🔗 CONFIGURAÇÃO: Adicione aqui o link do botão de checkout/compra
   const handleCheckoutClick = () => {
-    // Substitua 'SEU_LINK_DE_CHECKOUT_AQUI' pelo link real da página de pagamento
-    window.location.href = 'SEU_LINK_DE_CHECKOUT_AQUI';
+    window.location.href = 'https://pay.hotmart.com/N102539391O';
   };
 
   return (
